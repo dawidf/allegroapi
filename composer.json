@@ -20,6 +20,6 @@
     ],
     "minimum-stability": "stable",
     "autoload": {
-        "psr-4": { "Imper86\\AllegroApi\\": "src/Imper86/AllegroApi" }
+        "psr-4": { "Dawidf\\AllegroApi\\": "src/Imper86/AllegroApi" }
     }
 }
