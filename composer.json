@@ -1,5 +1,5 @@
 {
-    "name": "imper86/allegroapi",
+    "name": "dawidf/allegroapi",
     "description": "library making allegro rest and soap api using easier",
     "type": "library",
     "require": {
