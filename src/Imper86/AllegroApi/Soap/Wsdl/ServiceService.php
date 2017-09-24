@@ -2,11 +2,14 @@
 
 namespace Imper86\AllegroApi\Soap\Wsdl;
 
+use JMS\Serializer\Annotation as Serializer;
+
 class ServiceService extends \SoapClient
 {
 
     /**
      * @var array $classmap The defined classes
+     * @Serializer\Type("array")
      */
     private static $classmap = array (
       'PackageInfoStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\PackageInfoStruct',
