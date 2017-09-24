@@ -25,7 +25,7 @@ class SoapServiceException extends \Exception
         $this->soapService = clone $soapService;
         $this->stringCode = $soapFault->faultcode;
 
-        if (get_class($this) === SoapServiceException::class) {
+        if (get_class($this) == SoapServiceException::class) {
             switch ($this->stringCode) {
                 case 'ERR_INVALID_ACCESS_TOKEN':
                     throw new InvalidAccessTokenException($soapService, $soapFault, $request);

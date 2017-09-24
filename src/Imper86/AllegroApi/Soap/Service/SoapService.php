@@ -10,12 +10,13 @@ namespace Imper86\AllegroApi\Soap\Service;
 
 use Imper86\AllegroApi\Soap\Exception\SoapServiceException;
 use Imper86\AllegroApi\Soap\Wsdl\ServiceService;
+use JMS\Serializer\Annotation as Serializer;
 
 class SoapService extends ServiceService
 {
-    public function __construct()
+    public function __construct(array $options, string $wsdl)
     {
-        parent::__construct(['trace' => true]);
+        parent::__construct($options, $wsdl);
     }
 
     public function __soapCall($function_name, $arguments, $options = null, $input_headers = null, &$output_headers = null)

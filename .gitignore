@@ -3,5 +3,3 @@ composer.lock
 /vendor/
 /dev/tests/
 /dev/
-/nginx/nginx.conf
-/docker-compose.yml
