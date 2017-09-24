@@ -1,7 +1,7 @@
 <?php
 
 
- function autoload_317dfb77a4ae2b709e54707ee54d8470($class)
+ function autoload_999231c12dd9a61b7b39199f1c7e24f8($class)
 {
     $classes = array(
         'Imper86\AllegroApi\Soap\Wsdl\ServiceService' => __DIR__ .'/ServiceService.php',
@@ -112,14 +112,6 @@
         'Imper86\AllegroApi\Soap\Wsdl\DealsStruct' => __DIR__ .'/DealsStruct.php',
         'Imper86\AllegroApi\Soap\Wsdl\ArrayOfDealsstruct' => __DIR__ .'/ArrayOfDealsstruct.php',
         'Imper86\AllegroApi\Soap\Wsdl\doGetDealsResponse' => __DIR__ .'/doGetDealsResponse.php',
-        'Imper86\AllegroApi\Soap\Wsdl\DoGetFavouriteCategoriesRequest' => __DIR__ .'/DoGetFavouriteCategoriesRequest.php',
-        'Imper86\AllegroApi\Soap\Wsdl\FavouritesCategoriesStruct' => __DIR__ .'/FavouritesCategoriesStruct.php',
-        'Imper86\AllegroApi\Soap\Wsdl\ArrayOfFavouritescategoriesstruct' => __DIR__ .'/ArrayOfFavouritescategoriesstruct.php',
-        'Imper86\AllegroApi\Soap\Wsdl\doGetFavouriteCategoriesResponse' => __DIR__ .'/doGetFavouriteCategoriesResponse.php',
-        'Imper86\AllegroApi\Soap\Wsdl\DoGetFavouriteSellersRequest' => __DIR__ .'/DoGetFavouriteSellersRequest.php',
-        'Imper86\AllegroApi\Soap\Wsdl\FavouritesSellersStruct' => __DIR__ .'/FavouritesSellersStruct.php',
-        'Imper86\AllegroApi\Soap\Wsdl\ArrayOfFavouritessellersstruct' => __DIR__ .'/ArrayOfFavouritessellersstruct.php',
-        'Imper86\AllegroApi\Soap\Wsdl\doGetFavouriteSellersResponse' => __DIR__ .'/doGetFavouriteSellersResponse.php',
         'Imper86\AllegroApi\Soap\Wsdl\DoGetFeedbackRequest' => __DIR__ .'/DoGetFeedbackRequest.php',
         'Imper86\AllegroApi\Soap\Wsdl\FeedbackList' => __DIR__ .'/FeedbackList.php',
         'Imper86\AllegroApi\Soap\Wsdl\ArrayOfFeedbacklist' => __DIR__ .'/ArrayOfFeedbacklist.php',
@@ -517,10 +509,6 @@
         'Imper86\AllegroApi\Soap\Wsdl\doSetUserLicenceDateResponse' => __DIR__ .'/doSetUserLicenceDateResponse.php',
         'Imper86\AllegroApi\Soap\Wsdl\DoShowItemInfoExtRequest' => __DIR__ .'/DoShowItemInfoExtRequest.php',
         'Imper86\AllegroApi\Soap\Wsdl\ItemInfoExt' => __DIR__ .'/ItemInfoExt.php',
-        'Imper86\AllegroApi\Soap\Wsdl\ItemVariantAttributeStruct' => __DIR__ .'/ItemVariantAttributeStruct.php',
-        'Imper86\AllegroApi\Soap\Wsdl\ArrayOfItemvariantattributestruct' => __DIR__ .'/ArrayOfItemvariantattributestruct.php',
-        'Imper86\AllegroApi\Soap\Wsdl\ItemVariantStruct' => __DIR__ .'/ItemVariantStruct.php',
-        'Imper86\AllegroApi\Soap\Wsdl\ArrayOfItemvariantstruct' => __DIR__ .'/ArrayOfItemvariantstruct.php',
         'Imper86\AllegroApi\Soap\Wsdl\doShowItemInfoExtResponse' => __DIR__ .'/doShowItemInfoExtResponse.php',
         'Imper86\AllegroApi\Soap\Wsdl\DoShowUserRequest' => __DIR__ .'/DoShowUserRequest.php',
         'Imper86\AllegroApi\Soap\Wsdl\ShowUserFeedbacks' => __DIR__ .'/ShowUserFeedbacks.php',
@@ -533,7 +521,7 @@
     };
 }
 
-spl_autoload_register('autoload_317dfb77a4ae2b709e54707ee54d8470');
+spl_autoload_register('autoload_999231c12dd9a61b7b39199f1c7e24f8');
 
 // Do nothing. The rest is just leftovers from the code generation.
 {

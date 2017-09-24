@@ -46,7 +46,7 @@ class doShowItemInfoExtResponse
     protected $itemProductInfo = null;
 
     /**
-     * @var ArrayOfItemvariantstruct $itemVariants
+     * @var string $itemVariants
      */
     protected $itemVariants = null;
 
@@ -64,7 +64,7 @@ class doShowItemInfoExtResponse
      * @param ItemPaymentOptions $itemPaymentOptions
      * @param CompanyInfoStruct $itemCompanyInfo
      * @param ProductStruct $itemProductInfo
-     * @param ArrayOfItemvariantstruct $itemVariants
+     * @param string $itemVariants
      * @param AfterSalesServiceConditionsStruct $itemAfterSalesServiceConditions
      */
     public function __construct($itemListInfoExt = null, $itemCatPath = null, $itemImgList = null, $itemAttribList = null, $itemPostageOptions = null, $itemPaymentOptions = null, $itemCompanyInfo = null, $itemProductInfo = null, $itemVariants = null, $itemAfterSalesServiceConditions = null)
@@ -226,7 +226,7 @@ class doShowItemInfoExtResponse
     }
 
     /**
-     * @return ArrayOfItemvariantstruct
+     * @return string
      */
     public function getItemVariants()
     {
@@ -234,7 +234,7 @@ class doShowItemInfoExtResponse
     }
 
     /**
-     * @param ArrayOfItemvariantstruct $itemVariants
+     * @param string $itemVariants
      * @return \Imper86\AllegroApi\Soap\Wsdl\doShowItemInfoExtResponse
      */
     public function setItemVariants($itemVariants)

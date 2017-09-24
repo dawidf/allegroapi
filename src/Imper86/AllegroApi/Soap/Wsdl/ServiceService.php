@@ -2,13 +2,11 @@
 
 namespace Imper86\AllegroApi\Soap\Wsdl;
 
-use JMS\Serializer\Annotation as Serializer;
-
 class ServiceService extends \SoapClient
 {
+
     /**
      * @var array $classmap The defined classes
-     * @Serializer\Type("array")
      */
     private static $classmap = array (
       'PackageInfoStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\PackageInfoStruct',
@@ -118,14 +116,6 @@ class ServiceService extends \SoapClient
       'DealsStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DealsStruct',
       'ArrayOfDealsstruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfDealsstruct',
       'doGetDealsResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doGetDealsResponse',
-      'DoGetFavouriteCategoriesRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoGetFavouriteCategoriesRequest',
-      'FavouritesCategoriesStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\FavouritesCategoriesStruct',
-      'ArrayOfFavouritescategoriesstruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfFavouritescategoriesstruct',
-      'doGetFavouriteCategoriesResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doGetFavouriteCategoriesResponse',
-      'DoGetFavouriteSellersRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoGetFavouriteSellersRequest',
-      'FavouritesSellersStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\FavouritesSellersStruct',
-      'ArrayOfFavouritessellersstruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfFavouritessellersstruct',
-      'doGetFavouriteSellersResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doGetFavouriteSellersResponse',
       'DoGetFeedbackRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoGetFeedbackRequest',
       'FeedbackList' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\FeedbackList',
       'ArrayOfFeedbacklist' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfFeedbacklist',
@@ -523,10 +513,6 @@ class ServiceService extends \SoapClient
       'doSetUserLicenceDateResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doSetUserLicenceDateResponse',
       'DoShowItemInfoExtRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoShowItemInfoExtRequest',
       'ItemInfoExt' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ItemInfoExt',
-      'ItemVariantAttributeStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ItemVariantAttributeStruct',
-      'ArrayOfItemvariantattributestruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfItemvariantattributestruct',
-      'ItemVariantStruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ItemVariantStruct',
-      'ArrayOfItemvariantstruct' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ArrayOfItemvariantstruct',
       'doShowItemInfoExtResponse' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\doShowItemInfoExtResponse',
       'DoShowUserRequest' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\DoShowUserRequest',
       'ShowUserFeedbacks' => 'Imper86\\AllegroApi\\Soap\\Wsdl\\ShowUserFeedbacks',
@@ -796,24 +782,6 @@ class ServiceService extends \SoapClient
     public function doGetDeals(DoGetDealsRequest $parameters)
     {
       return $this->__soapCall('doGetDeals', array($parameters));
-    }
-
-    /**
-     * @param DoGetFavouriteCategoriesRequest $parameters
-     * @return doGetFavouriteCategoriesResponse
-     */
-    public function doGetFavouriteCategories(DoGetFavouriteCategoriesRequest $parameters)
-    {
-      return $this->__soapCall('doGetFavouriteCategories', array($parameters));
-    }
-
-    /**
-     * @param DoGetFavouriteSellersRequest $parameters
-     * @return doGetFavouriteSellersResponse
-     */
-    public function doGetFavouriteSellers(DoGetFavouriteSellersRequest $parameters)
-    {
-      return $this->__soapCall('doGetFavouriteSellers', array($parameters));
     }
 
     /**
