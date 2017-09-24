@@ -1,5 +1,5 @@
 {
-    "name": "imper86/allegroapi",
+    "name": "dawidf120/allegroapi",
     "description": "library making allegro rest and soap api using easier",
     "type": "library",
     "require": {
@@ -15,8 +15,8 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "imper",
-            "email": "me@imper.info"
+            "name": "dawidf120",
+            "email": "dawidf120@gmail.com"
         }
     ],
     "minimum-stability": "stable",
