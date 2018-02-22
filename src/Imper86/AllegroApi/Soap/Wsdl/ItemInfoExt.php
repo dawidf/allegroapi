@@ -91,6 +91,16 @@ class ItemInfoExt
     protected $itBuyNowActive = null;
 
     /**
+     * @var float $itAdvertisementPrice
+     */
+    protected $itAdvertisementPrice = null;
+
+    /**
+     * @var int $itAdvertisementActive
+     */
+    protected $itAdvertisementActive = null;
+
+    /**
      * @var int $itHighBidder
      */
     protected $itHighBidder = null;
@@ -229,6 +239,11 @@ class ItemInfoExt
      * @var string $itEan
      */
     protected $itEan = null;
+
+    /**
+     * @var string $itContact
+     */
+    protected $itContact = null;
 
     /**
      * @param int $itId
@@ -621,6 +636,42 @@ class ItemInfoExt
     public function setItBuyNowActive($itBuyNowActive)
     {
       $this->itBuyNowActive = $itBuyNowActive;
+      return $this;
+    }
+
+    /**
+     * @return float
+     */
+    public function getItAdvertisementPrice()
+    {
+      return $this->itAdvertisementPrice;
+    }
+
+    /**
+     * @param float $itAdvertisementPrice
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfoExt
+     */
+    public function setItAdvertisementPrice($itAdvertisementPrice)
+    {
+      $this->itAdvertisementPrice = $itAdvertisementPrice;
+      return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getItAdvertisementActive()
+    {
+      return $this->itAdvertisementActive;
+    }
+
+    /**
+     * @param int $itAdvertisementActive
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfoExt
+     */
+    public function setItAdvertisementActive($itAdvertisementActive)
+    {
+      $this->itAdvertisementActive = $itAdvertisementActive;
       return $this;
     }
 
@@ -1125,6 +1176,24 @@ class ItemInfoExt
     public function setItEan($itEan)
     {
       $this->itEan = $itEan;
+      return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getItContact()
+    {
+      return $this->itContact;
+    }
+
+    /**
+     * @param string $itContact
+     * @return \Imper86\AllegroApi\Soap\Wsdl\ItemInfoExt
+     */
+    public function setItContact($itContact)
+    {
+      $this->itContact = $itContact;
       return $this;
     }
 

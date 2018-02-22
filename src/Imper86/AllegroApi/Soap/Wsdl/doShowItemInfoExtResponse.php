@@ -56,6 +56,11 @@ class doShowItemInfoExtResponse
     protected $itemAfterSalesServiceConditions = null;
 
     /**
+     * @var string $itemAdditionalServicesGroup
+     */
+    protected $itemAdditionalServicesGroup = null;
+
+    /**
      * @param ItemInfoExt $itemListInfoExt
      * @param ArrayOfItemcatlist $itemCatPath
      * @param ArrayOfItemimagelist $itemImgList
@@ -66,8 +71,9 @@ class doShowItemInfoExtResponse
      * @param ProductStruct $itemProductInfo
      * @param string $itemVariants
      * @param AfterSalesServiceConditionsStruct $itemAfterSalesServiceConditions
+     * @param string $itemAdditionalServicesGroup
      */
-    public function __construct($itemListInfoExt = null, $itemCatPath = null, $itemImgList = null, $itemAttribList = null, $itemPostageOptions = null, $itemPaymentOptions = null, $itemCompanyInfo = null, $itemProductInfo = null, $itemVariants = null, $itemAfterSalesServiceConditions = null)
+    public function __construct($itemListInfoExt = null, $itemCatPath = null, $itemImgList = null, $itemAttribList = null, $itemPostageOptions = null, $itemPaymentOptions = null, $itemCompanyInfo = null, $itemProductInfo = null, $itemVariants = null, $itemAfterSalesServiceConditions = null, $itemAdditionalServicesGroup = null)
     {
       $this->itemListInfoExt = $itemListInfoExt;
       $this->itemCatPath = $itemCatPath;
@@ -79,6 +85,7 @@ class doShowItemInfoExtResponse
       $this->itemProductInfo = $itemProductInfo;
       $this->itemVariants = $itemVariants;
       $this->itemAfterSalesServiceConditions = $itemAfterSalesServiceConditions;
+      $this->itemAdditionalServicesGroup = $itemAdditionalServicesGroup;
     }
 
     /**
@@ -258,6 +265,24 @@ class doShowItemInfoExtResponse
     public function setItemAfterSalesServiceConditions($itemAfterSalesServiceConditions)
     {
       $this->itemAfterSalesServiceConditions = $itemAfterSalesServiceConditions;
+      return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getItemAdditionalServicesGroup()
+    {
+      return $this->itemAdditionalServicesGroup;
+    }
+
+    /**
+     * @param string $itemAdditionalServicesGroup
+     * @return \Imper86\AllegroApi\Soap\Wsdl\doShowItemInfoExtResponse
+     */
+    public function setItemAdditionalServicesGroup($itemAdditionalServicesGroup)
+    {
+      $this->itemAdditionalServicesGroup = $itemAdditionalServicesGroup;
       return $this;
     }
 
